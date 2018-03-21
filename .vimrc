@@ -7,16 +7,41 @@ Plug 'itchyny/lightline.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'Yggdroot/indentLine'
+Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
+Plug 'ap/vim-buftabline'
+Plug 'jiangmiao/auto-pairs'
+Plug 'gregsexton/MatchTag'
 call plug#end()
 
 set number
 set relativenumber
 highlight link xmlEndTag xmlTag
-set noshowmode
 set termguicolors
-let ayucolor="mirage"
-colorscheme ayu
 set shiftwidth=4
 set expandtab
-set list lcs=tab:\|\ 
-let g:indentLine_char = '|'
+let g:indentLine_char = '▏'
+set backupdir=/tmp
+
+"Lightline Configuration
+
+"AYU Theme Settings" 
+"let ayucolor="light"
+"colorscheme ayu
+
+"Nord Theme Settings
+colorscheme nord
+let g:nord_italic = 1
+
+"Gruvbox Theme Settings"
+"colorscheme gruvbox
+"set background=dark
+
+highlight Comment cterm=italic
+
+"NerdTree Settings
+nnoremap <Leader>f :NERDTreeToggle<Enter>
+let NERDTreeQuitOnOpen = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+

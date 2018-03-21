@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/jacob/Documents/tern/gatsby-ternwater/src'
+let g:netrw_dirhist_2='/home/jacob/Documents/tern/gatsby-ternwater/src/templates'
+let g:netrw_dirhist_3='/home/jacob/Documents/tern/gatsby-ternwater/src'
