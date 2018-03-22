@@ -21,8 +21,8 @@ set termguicolors
 set shiftwidth=4
 set expandtab
 let g:indentLine_char = '▏'
-set backupdir=/tmp
-
+set swapfile
+set dir=~/tmp
 "Lightline Configuration
 set noshowmode
 let g:lightline = {
@@ -47,4 +47,7 @@ nnoremap <Leader>f :NERDTreeToggle<Enter>
 let NERDTreeQuitOnOpen = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+
+"My Mappings
+:nmap <c-s> :w<CR>
 
