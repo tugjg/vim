@@ -24,7 +24,10 @@ let g:indentLine_char = '▏'
 set backupdir=/tmp
 
 "Lightline Configuration
-
+set noshowmode
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ }
 "AYU Theme Settings" 
 "let ayucolor="light"
 "colorscheme ayu
