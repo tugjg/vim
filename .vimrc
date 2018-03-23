@@ -11,8 +11,9 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'ap/vim-buftabline'
 Plug 'jiangmiao/auto-pairs'
-Plug 'gregsexton/MatchTag'
+Plug 'Valloric/MatchTagAlways'
 Plug 'takac/vim-hardtime'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 set number
@@ -50,7 +51,16 @@ let NERDTreeDirArrows = 1
 "VIM Hardtime On Always
 let g:hardtime_default_on = 1
 
+"MatchTagAlways
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \ 'javascript.jsx': 1,
+    \}
 "My Mappings
 :nmap <c-s> :w<CR>
 
-
+"Line Number Color for Nord
+highlight LineNr term=bold gui=NONE guifg=#b5bcc9 guibg=#2b303b
