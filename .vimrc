@@ -12,6 +12,7 @@ Plug 'morhetz/gruvbox'
 Plug 'ap/vim-buftabline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'gregsexton/MatchTag'
+Plug 'takac/vim-hardtime'
 call plug#end()
 
 set number
@@ -21,8 +22,6 @@ set termguicolors
 set shiftwidth=4
 set expandtab
 let g:indentLine_char = '▏'
-set swapfile
-set dir=~/tmp
 "Lightline Configuration
 set noshowmode
 let g:lightline = {
@@ -48,6 +47,10 @@ let NERDTreeQuitOnOpen = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
+"VIM Hardtime On Always
+let g:hardtime_default_on = 1
+
 "My Mappings
 :nmap <c-s> :w<CR>
+
 
